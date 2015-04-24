@@ -1,18 +1,21 @@
 # <a href="http://rosarior.github.io/awesome-django/"><img src="https://raw.githubusercontent.com/rosarior/awesome-django/gh-pages/images/logo-small.png" align="absmiddle"/> Awesome Django</a>
 
-A curated list of awesome Django apps, projects and resources. Inspired by and based on [awesome-python](https://github.com/vinta/awesome-python/).
+> 这是一个[awesome-python](https://github.com/vinta/awesome-python/) 项目的中文翻译，主要收集了一些 Django相关的资源，很多东西可以帮助我们快速的开发，很多东西的实现原理也可以带给我们一些启迪。
+
+> 本项目地址[awesome-django](https://github.com/orangle/awesome-django), 由 [orangleiu](http://www.orangleliu.info/)业余翻译。
+这个项目可以翻译成 **了不起的Django**。
 
 - [Awesome Django](#awesome-django)
-    - [Admin Interface](#admin-interface)
-    - [Asset Management](#asset-management)
-    - [Authentication](#authentication)
-    - [Authorization](#authorization)
-    - [Caching](#caching)
-    - [Compatibility](#compatibility)
-    - [Debugging](#debugging)
-    - [Email](#email)
-    - [Fields](#fields)
-    - [File Transfers](#file-transfers)
+    - [Admin接口](#admin-interface)
+    - [资源管理](#asset-management)
+    - [认证](#authentication)
+    - [授权](#authorization)
+    - [缓存](#caching)
+    - [兼容性](#compatibility)
+    - [调试](#debugging)
+    - [邮件](#email)
+    - [字段](#fields)
+    - [文件传输](#file-transfers)
     - [Forms](#forms)
     - [Migrations](#migrations)
     - [Mobile Support](#mobile-support)
@@ -50,82 +53,79 @@ A curated list of awesome Django apps, projects and resources. Inspired by and b
 - [Contributing](#contributing)
 
 
+## Admin接口
 
+**Admin 接口的拓展，添加或者提升了一些特性**
 
-## Admin interface
+* [django-flat-theme](https://github.com/elky/django-flat-theme) - 一个接地气的Django admin接口。 现代，新鲜，简单（可能老外那么觉得。。）
+* [djamin](https://github.com/hersonls/djamin/) - 一种新风格的 Django admin
+* [django-admin-bootstrap](https://github.com/douglasmiranda/django-admin-bootstrap/) - 给 Django Admin 换了个皮肤
+* [django-admin-bootstrapped](https://github.com/django-admin-bootstrapped/django-admin-bootstrapped/) - 使用Twitter Bootstrap主题的Django admin
+* [django-admin-tools](https://bitbucket.org/izi/django-admin-tools/) -  收集了一些 原生的那个 django admin 接口的扩展和工具
+* [django-admin2](https://github.com/pydanny/django-admin2/) - 重写 django.contrib.admin，变得可拓展，适应性更好
+* [django-grappelli](https://github.com/sehmaschine/django-grappelli/) - 这个界面比较花哨
+* [django-fluent-dashboard](https://github.com/edoburu/django-fluent-dashboard/) - 增强了 django-admin-tools 仪表盘
+* [django-hijack](https://github.com/arteria/django-hijack/) - 允许管理用户已其他用户的身份登录和操作（可以直接用你账号帮你操作操作)
+* [django-suit](https://github.com/darklow/django-suit/) - 界面比较现代化.
+* [django-xadmin](https://github.com/sshwsfc/django-xadmin/) - 这是咱们国产的项目，把原来的admin替换了，这个admin增加了很多好东西，插件机制，基于Bootstrap的Ui等。
+* [yawd-admin](https://github.com/yawd/yawd-admin/) - 也是用Bootstrap，H5等重写了UI
+* [django-wpadmin](https://github.com/barszczmm/django-wpadmin/) - 有WordPress的感觉
+* [django-material](https://github.com/viewflow/django-material) 设计下Form，Admin. 模板驱动
 
-*Packages that extend the Admin interface, adding or improving features.*
+## 资产管理
 
-* [django-flat-theme](https://github.com/elky/django-flat-theme) - A flat theme for Django admin interface. Modern, fresh, simple.
-* [djamin](https://github.com/hersonls/djamin/) - A new style for Django admin.
-* [django-admin-bootstrap](https://github.com/douglasmiranda/django-admin-bootstrap/) - Responsible Skin for Django Admin
-* [django-admin-bootstrapped](https://github.com/django-admin-bootstrapped/django-admin-bootstrapped/) - A Django admin theme using Twitter Bootstrap.
-* [django-admin-tools](https://bitbucket.org/izi/django-admin-tools/) - A collection of extensions/tools for the default django administration interface
-* [django-admin2](https://github.com/pydanny/django-admin2/) - Extendable, adaptable rewrite of django.contrib.admin
-* [django-grappelli](https://github.com/sehmaschine/django-grappelli/) - A jazzy skin for the Django Admin-Interface.
-* [django-fluent-dashboard](https://github.com/edoburu/django-fluent-dashboard/) - An improved django-admin-tools dashboard for Django projects
-* [django-hijack](https://github.com/arteria/django-hijack/) - Allows superusers to hijack (=login as) and work on behalf of another user.
-* [django-suit](https://github.com/darklow/django-suit/) - Modern theme for Django admin interface.
-* [django-xadmin](https://github.com/sshwsfc/django-xadmin/) - Drop-in replacement of Django admin comes with lots of goodies, fully extensible with plugin support, pretty UI based on Twitter Bootstrap
-* [yawd-admin](https://github.com/yawd/yawd-admin/) - An administration website for Django
-* [django-wpadmin](https://github.com/barszczmm/django-wpadmin/) - WordPress look and feel for Django administration panel.
-* [django-material](https://github.com/viewflow/django-material) Material design for Django Forms and Admin. Template driven.
+** 打包和帮助管理项目的静态资源**
 
-## Asset Management
+* [django-compressor](https://github.com/django-compressor/django-compressor/) - 压缩和内联javascript或CSS连接到一个单独的缓存文件
+* [django-htmlmin](https://github.com/cobrateam/django-htmlmin/) - 压缩html到最小，也支持其他的web框架，flask什么的
+* [django-gears](https://github.com/gears/django-gears/) - 编译连接 JavaScript and CSS
+* [django-pipeline](https://github.com/cyberdelia/django-pipeline/) - 也是用来打包资源的
 
-*Packages that help manage the static assets of a project.*
+## 认证
 
-* [django-compressor](https://github.com/django-compressor/django-compressor/) - Compresses linked and inline javascript or CSS into a single cached file.
-* [django-htmlmin](https://github.com/cobrateam/django-htmlmin/) - HTML minifier for Python with full support for HTML 5 and Django.
-* [django-gears](https://github.com/gears/django-gears/) - Compiles and concatenates JavaScript and CSS assets.
-* [django-pipeline](https://github.com/cyberdelia/django-pipeline/) - Asset packaging for Django.
+** 提高或者拓展 Django的认证方法的包**
 
-## Authentication
+* [django-allauth](https://github.com/pennersr/django-allauth/) - 集成了 Django应用的 认证，注册，账户管理以及第三方认证
+* [django-organizations](https://github.com/bennylope/django-organizations) - 多用户的Django项目，类似小组，组织这种用户结构
+* [django-otp](https://bitbucket.org/psagers/django-otp/) - 可插拔框架，使用一次性密码做到二重认证
+* [django-rest-auth](https://github.com/Tivix/django-rest-auth) -  使用Restful Api 来处理用户注册和认证
+* [python-social-auth](https://github.com/omab/python-social-auth/) - Python 社交认证 是一个简单好用的 社交认证、注册机制，支持好几种框架（django，flask，tornado等）
+* [django-two-factor-auth](https://github.com/Bouke/django-two-factor-auth/) - 友好的二重认证
+* [django-userena](https://github.com/bread-and-pepper/django-userena/) - 账户注册，激活，消息方面做的不错
 
-*Packages that improve or extend the authentication methods of Django.*
+## 授权
 
-* [django-allauth](https://github.com/pennersr/django-allauth/) - Integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication.
-* [django-organizations](https://github.com/bennylope/django-organizations) - Multi-user accounts for Django projects.
-* [django-otp](https://bitbucket.org/psagers/django-otp/) - A pluggable framework for adding two-factor authentication to Django using one-time passwords.
-* [django-rest-auth](https://github.com/Tivix/django-rest-auth) -  A set of REST API endpoints to handle User Registration and Authentication tasks.
-* [python-social-auth](https://github.com/omab/python-social-auth/) - Python Social Auth is an easy-to-setup social authentication/registration mechanism with support for several frameworks and auth providers.
-* [django-two-factor-auth](https://github.com/Bouke/django-two-factor-auth/) - User-friendly Two-Factor authentication.
-* [django-userena](https://github.com/bread-and-pepper/django-userena/) - Accounts for Django made beautifully simple
+** 授权和权限管理相关的包 **
 
-## Authorization
+* [django-oauth-toolkit](https://github.com/evonove/django-oauth-toolkit) - OAuth2 工具箱
+* [django-oauth2-provider](https://github.com/caffeinehit/django-oauth2-provider) - 给你的app提供OAuth2 授权
+* [django-guardian](https://github.com/lukaszb/django-guardian/) - 实现了对每个对象的授权
+* [django-oml](https://github.com/RouteAtlas/django-oml/) - Object Moderation Layer 的缩写，混合模型。（英文介绍没理解）
+* [django-permission](https://github.com/lambdalisue/django-permission/) 基于逻辑授权的系统，可以处理复杂的权限模型
 
-*Packages related to authorization infrastructure and permissions.*
+## 缓存
 
-* [django-oauth-toolkit](https://github.com/evonove/django-oauth-toolkit) - OAuth2 goodies for the Djangonauts!
-* [django-oauth2-provider](https://github.com/caffeinehit/django-oauth2-provider) - Provide OAuth2 access to your app
-* [django-guardian](https://github.com/lukaszb/django-guardian/) - Implementation of per object permissions as authorization backend.
-* [django-oml](https://github.com/RouteAtlas/django-oml/) - Object Moderation Layer, mixin for models that allows you moderate several content types.
-* [django-permission](https://github.com/lambdalisue/django-permission/) An enhanced permission library which enables a *logic-based permission system* to handle complex permissions in Django
+* 可以帮助做缓存的包 *
 
-## Caching
-
-*Packages that help with caching.*
-
-* [django-ormcache](https://github.com/educreations/django-ormcache/) - A cache manager mixin that provides some caching of objects for the ORM.
-* [johnny-cache](https://github.com/jmoiron/johnny-cache/) - Johnny Cache is a caching framework for django applications.
+* [django-ormcache](https://github.com/educreations/django-ormcache/) - 一个可以管理 orm 对象缓存的缓存管理器
+* [johnny-cache](https://github.com/jmoiron/johnny-cache/) - 主要是用memcached来做缓存
 * [django-cacheops](https://github.com/Suor/django-cacheops) - A slick ORM cache with automatic granular event-driven invalidation.
-* [django-cache-machine](https://github.com/jbalogh/django-cache-machine) - Automatic caching and invalidation for Django models through the ORM.
-* [django-cachalot](https://github.com/BertrandBordage/django-cachalot) - Caches your Django ORM queries and automatically invalidates them.
-* [django-memoize](https://github.com/tvavrys/django-memoize) - An implementation of [memoization](http://en.wikipedia.org/wiki/Memoization) technique for Django.
+* [django-cache-machine](https://github.com/jbalogh/django-cache-machine) - 自动缓存queryset结果，根据时间设定自动失效
+* [django-cachalot](https://github.com/BertrandBordage/django-cachalot) -跟上面一个作用，缓存查询结果并自动失效
+* [django-memoize](https://github.com/tvavrys/django-memoize) - 实现了 [memoization](http://en.wikipedia.org/wiki/Memoization) 技术
 
 
-## Compatibility
+## 兼容性
 
-*Packages that help to keep compatibility of reusable apps between different Django versions.*
+**用来做兼容,可以让apps 在不同版本的django都可用**
+
+* [django-compat](https://github.com/arteria/django-compat) - django1.4.x 到 1.7.x 向后兼容
+* [django-compat-lint](https://github.com/ubernostrum/django-compat-lint) - 检查代码的兼容性
 
 
-* [django-compat](https://github.com/arteria/django-compat) - For- and backwards compatibility layer for Django 1.4 to 1.7.x.
-* [django-compat-lint](https://github.com/ubernostrum/django-compat-lint) - Check Django compatibility of your code.
+## 调试
 
-
-## Debugging
-
-*Packages that help hunt down bugs.*
+** 协助查找bug的包 **
 
 * [django-debug-toolbar](https://github.com/django-debug-toolbar/django-debug-toolbar/) - A configurable set of panels that display various debug information about the current request/response.
 * [django-devserver](https://github.com/dcramer/django-devserver/) - A drop in replacement for Django's built-in runserver command.
