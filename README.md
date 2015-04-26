@@ -72,9 +72,9 @@
 * [django-wpadmin](https://github.com/barszczmm/django-wpadmin/) - 有WordPress的感觉
 * [django-material](https://github.com/viewflow/django-material) 设计下Form，Admin. 模板驱动
 
-## 资产管理
+## 资源管理
 
-** 打包和帮助管理项目的静态资源**
+**打包和帮助管理项目的静态资源**
 
 * [django-compressor](https://github.com/django-compressor/django-compressor/) - 压缩和内联javascript或CSS连接到一个单独的缓存文件
 * [django-htmlmin](https://github.com/cobrateam/django-htmlmin/) - 压缩html到最小，也支持其他的web框架，flask什么的
@@ -83,7 +83,7 @@
 
 ## 认证
 
-** 提高或者拓展 Django的认证方法的包**
+**提高或者拓展 Django的认证方法的包**
 
 * [django-allauth](https://github.com/pennersr/django-allauth/) - 集成了 Django应用的 认证，注册，账户管理以及第三方认证
 * [django-organizations](https://github.com/bennylope/django-organizations) - 多用户的Django项目，类似小组，组织这种用户结构
@@ -95,7 +95,7 @@
 
 ## 授权
 
-** 授权和权限管理相关的包 **
+**授权和权限管理相关的包**
 
 * [django-oauth-toolkit](https://github.com/evonove/django-oauth-toolkit) - OAuth2 工具箱
 * [django-oauth2-provider](https://github.com/caffeinehit/django-oauth2-provider) - 给你的app提供OAuth2 授权
@@ -105,7 +105,7 @@
 
 ## 缓存
 
-* 可以帮助做缓存的包 *
+**可以帮助做缓存的包**
 
 * [django-ormcache](https://github.com/educreations/django-ormcache/) - 一个可以管理 orm 对象缓存的缓存管理器
 * [johnny-cache](https://github.com/jmoiron/johnny-cache/) - 主要是用memcached来做缓存
@@ -125,7 +125,7 @@
 
 ## 调试
 
-** 协助查找bug的包 **
+**协助查找bug的包**
 
 * [django-debug-toolbar](https://github.com/django-debug-toolbar/django-debug-toolbar/) - A configurable set of panels that display various debug information about the current request/response.
 * [django-devserver](https://github.com/dcramer/django-devserver/) - A drop in replacement for Django's built-in runserver command.
