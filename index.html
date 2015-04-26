@@ -1,54 +1,836 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset='utf-8'>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Awesome-django by orangle</title>
 
-  <title>Awesome Django</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Awesome-django</h1>
+        <p class="header">Django 框架有用的资源收集</p>
 
-  <!-- Flatdoc -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src='https://cdn.rawgit.com/rstacruz/flatdoc/v0.9.0/legacy.js'></script>
-  <script src='https://cdn.rawgit.com/rstacruz/flatdoc/v0.9.0/flatdoc.js'></script>
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/orangle/awesome-django/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/orangle/awesome-django/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/orangle/awesome-django">View On GitHub</a></li>
+        </ul>
 
-  <!-- Flatdoc theme -->
-  <link  href='https://cdn.rawgit.com/rstacruz/flatdoc/v0.9.0/theme-white/style.css' rel='stylesheet'>
-  <script src='https://cdn.rawgit.com/rstacruz/flatdoc/v0.9.0/theme-white/script.js'></script>
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/orangle">orangle</a></p>
 
-  <!-- Meta -->
-  <meta content="Awesome Django" property="og:title">
-  <meta content="A curated list of awesome Django apps, projects and resources." name="description">
 
-  <!-- Initializer -->
-  <script>
-    Flatdoc.run({
-      fetcher: Flatdoc.github('rosarior/awesome-django')
-    });
-  </script>
-</head>
-<body role='flatdoc'>
+      </header>
+      <section>
+        <h1>
+<a id="-awesome-django" class="anchor" href="#-awesome-django" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://rosarior.github.io/awesome-django/"><img src="https://raw.githubusercontent.com/rosarior/awesome-django/gh-pages/images/logo-small.png" align="absmiddle"> Awesome Django</a>
+</h1>
 
-  <div class='header'>
-    <div class='left'>
-      <h1>Awesome Django</h1>
-      <ul>
-        <li><a href='https://github.com/rosarior/awesome-django'>View on GitHub</a></li>
-        <li><a href='https://github.com/rosarior/awesome-django/issues'>Issues</a></li>
-      </ul>
+<blockquote>
+<p>这是一个<a href="https://github.com/vinta/awesome-python/">awesome-python</a> 项目的中文翻译，主要收集了一些 Django相关的资源，很多东西可以帮助我们快速的开发，很多东西的实现原理也可以带给我们一些启迪。</p>
+
+<p>本项目地址<a href="https://github.com/orangle/awesome-django">awesome-django</a>, 由 <a href="http://www.orangleliu.info/">orangleiu</a>业余翻译。
+这个项目可以翻译成 <strong>了不起的Django</strong>。</p>
+</blockquote>
+
+<ul>
+<li>
+<a href="#awesome-django">Awesome Django</a>
+
+<ul>
+<li><a href="#admin-interface">Admin接口</a></li>
+<li><a href="#asset-management">资源管理</a></li>
+<li><a href="#authentication">认证</a></li>
+<li><a href="#authorization">授权</a></li>
+<li><a href="#caching">缓存</a></li>
+<li><a href="#compatibility">兼容性</a></li>
+<li><a href="#debugging">调试</a></li>
+<li><a href="#email">邮件</a></li>
+<li><a href="#fields">字段</a></li>
+<li><a href="#file-transfers">文件传输</a></li>
+<li><a href="#forms">Forms</a></li>
+<li><a href="#migrations">Migrations</a></li>
+<li><a href="#mobile-support">Mobile Support</a></li>
+<li><a href="#model-extensions">Model Extensions</a></li>
+<li><a href="#payment-processing">Payment Processing</a></li>
+<li><a href="#project-management">Project Management</a></li>
+<li><a href="#restful-api">RESTful API</a></li>
+<li><a href="#search">Search</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#seo">SEO</a></li>
+<li><a href="#settings">Settings</a></li>
+<li><a href="#storage">Storage</a></li>
+<li><a href="#tagging">Tagging</a></li>
+<li><a href="#task-queue">Task Queue</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#thumbnail">Thumbnail</a></li>
+<li><a href="#cropping-image">Cropping Images</a></li>
+<li><a href="#translations">Translations</a></li>
+<li><a href="#web-frontend-integration">Web frontend integration</a></li>
+<li><a href="#wiki-apps">Wiki apps</a></li>
+<li><a href="#wysiwyg-editors">WYSIWYG Editors</a></li>
+<li><a href="#workflows">Workflows</a></li>
+<li><a href="#other">Other</a></li>
+</ul>
+</li>
+<li>
+<a href="#projects">Projects</a>
+
+<ul>
+<li><a href="#cms">CMS</a></li>
+<li><a href="#document-management">Document Management</a></li>
+<li><a href="#e-commerce">e-Commerce</a></li>
+<li><a href="#project-management">Project Management</a></li>
+<li><a href="#other">Other</a></li>
+</ul>
+</li>
+<li>
+<a href="#resources">Resources</a>
+
+<ul>
+<li><a href="#books">Books</a></li>
+<li><a href="#websites">Websites</a></li>
+<li><a href="#conferences">Conferences</a></li>
+<li><a href="#videos">Videos</a></li>
+</ul>
+</li>
+<li><a href="#contributing">Contributing</a></li>
+</ul>
+
+<h2>
+<a id="admin接口" class="anchor" href="#admin%E6%8E%A5%E5%8F%A3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Admin接口</h2>
+
+<p><strong>Admin 接口的拓展，添加或者提升了一些特性</strong></p>
+
+<ul>
+<li>
+<a href="https://github.com/elky/django-flat-theme">django-flat-theme</a> - 一个接地气的Django admin接口。 现代，新鲜，简单（可能老外那么觉得。。）</li>
+<li>
+<a href="https://github.com/hersonls/djamin/">djamin</a> - 一种新风格的 Django admin</li>
+<li>
+<a href="https://github.com/douglasmiranda/django-admin-bootstrap/">django-admin-bootstrap</a> - 给 Django Admin 换了个皮肤</li>
+<li>
+<a href="https://github.com/django-admin-bootstrapped/django-admin-bootstrapped/">django-admin-bootstrapped</a> - 使用Twitter Bootstrap主题的Django admin</li>
+<li>
+<a href="https://bitbucket.org/izi/django-admin-tools/">django-admin-tools</a> -  收集了一些 原生的那个 django admin 接口的扩展和工具</li>
+<li>
+<a href="https://github.com/pydanny/django-admin2/">django-admin2</a> - 重写 django.contrib.admin，变得可拓展，适应性更好</li>
+<li>
+<a href="https://github.com/sehmaschine/django-grappelli/">django-grappelli</a> - 这个界面比较花哨</li>
+<li>
+<a href="https://github.com/edoburu/django-fluent-dashboard/">django-fluent-dashboard</a> - 增强了 django-admin-tools 仪表盘</li>
+<li>
+<a href="https://github.com/arteria/django-hijack/">django-hijack</a> - 允许管理用户已其他用户的身份登录和操作（可以直接用你账号帮你操作操作)</li>
+<li>
+<a href="https://github.com/darklow/django-suit/">django-suit</a> - 界面比较现代化.</li>
+<li>
+<a href="https://github.com/sshwsfc/django-xadmin/">django-xadmin</a> - 这是咱们国产的项目，把原来的admin替换了，这个admin增加了很多好东西，插件机制，基于Bootstrap的Ui等。</li>
+<li>
+<a href="https://github.com/yawd/yawd-admin/">yawd-admin</a> - 也是用Bootstrap，H5等重写了UI</li>
+<li>
+<a href="https://github.com/barszczmm/django-wpadmin/">django-wpadmin</a> - 有WordPress的感觉</li>
+<li>
+<a href="https://github.com/viewflow/django-material">django-material</a> 设计下Form，Admin. 模板驱动</li>
+</ul>
+
+<h2>
+<a id="资产管理" class="anchor" href="#%E8%B5%84%E4%BA%A7%E7%AE%A1%E7%90%86" aria-hidden="true"><span class="octicon octicon-link"></span></a>资产管理</h2>
+
+<p>** 打包和帮助管理项目的静态资源**</p>
+
+<ul>
+<li>
+<a href="https://github.com/django-compressor/django-compressor/">django-compressor</a> - 压缩和内联javascript或CSS连接到一个单独的缓存文件</li>
+<li>
+<a href="https://github.com/cobrateam/django-htmlmin/">django-htmlmin</a> - 压缩html到最小，也支持其他的web框架，flask什么的</li>
+<li>
+<a href="https://github.com/gears/django-gears/">django-gears</a> - 编译连接 JavaScript and CSS</li>
+<li>
+<a href="https://github.com/cyberdelia/django-pipeline/">django-pipeline</a> - 也是用来打包资源的</li>
+</ul>
+
+<h2>
+<a id="认证" class="anchor" href="#%E8%AE%A4%E8%AF%81" aria-hidden="true"><span class="octicon octicon-link"></span></a>认证</h2>
+
+<p>** 提高或者拓展 Django的认证方法的包**</p>
+
+<ul>
+<li>
+<a href="https://github.com/pennersr/django-allauth/">django-allauth</a> - 集成了 Django应用的 认证，注册，账户管理以及第三方认证</li>
+<li>
+<a href="https://github.com/bennylope/django-organizations">django-organizations</a> - 多用户的Django项目，类似小组，组织这种用户结构</li>
+<li>
+<a href="https://bitbucket.org/psagers/django-otp/">django-otp</a> - 可插拔框架，使用一次性密码做到二重认证</li>
+<li>
+<a href="https://github.com/Tivix/django-rest-auth">django-rest-auth</a> -  使用Restful Api 来处理用户注册和认证</li>
+<li>
+<a href="https://github.com/omab/python-social-auth/">python-social-auth</a> - Python 社交认证 是一个简单好用的 社交认证、注册机制，支持好几种框架（django，flask，tornado等）</li>
+<li>
+<a href="https://github.com/Bouke/django-two-factor-auth/">django-two-factor-auth</a> - 友好的二重认证</li>
+<li>
+<a href="https://github.com/bread-and-pepper/django-userena/">django-userena</a> - 账户注册，激活，消息方面做的不错</li>
+</ul>
+
+<h2>
+<a id="授权" class="anchor" href="#%E6%8E%88%E6%9D%83" aria-hidden="true"><span class="octicon octicon-link"></span></a>授权</h2>
+
+<p>** 授权和权限管理相关的包 **</p>
+
+<ul>
+<li>
+<a href="https://github.com/evonove/django-oauth-toolkit">django-oauth-toolkit</a> - OAuth2 工具箱</li>
+<li>
+<a href="https://github.com/caffeinehit/django-oauth2-provider">django-oauth2-provider</a> - 给你的app提供OAuth2 授权</li>
+<li>
+<a href="https://github.com/lukaszb/django-guardian/">django-guardian</a> - 实现了对每个对象的授权</li>
+<li>
+<a href="https://github.com/RouteAtlas/django-oml/">django-oml</a> - Object Moderation Layer 的缩写，混合模型。（英文介绍没理解）</li>
+<li>
+<a href="https://github.com/lambdalisue/django-permission/">django-permission</a> 基于逻辑授权的系统，可以处理复杂的权限模型</li>
+</ul>
+
+<h2>
+<a id="缓存" class="anchor" href="#%E7%BC%93%E5%AD%98" aria-hidden="true"><span class="octicon octicon-link"></span></a>缓存</h2>
+
+<ul>
+<li><p>可以帮助做缓存的包 *</p></li>
+<li><p><a href="https://github.com/educreations/django-ormcache/">django-ormcache</a> - 一个可以管理 orm 对象缓存的缓存管理器</p></li>
+<li>
+<a href="https://github.com/jmoiron/johnny-cache/">johnny-cache</a> - 主要是用memcached来做缓存</li>
+<li>
+<a href="https://github.com/Suor/django-cacheops">django-cacheops</a> - A slick ORM cache with automatic granular event-driven invalidation.</li>
+<li>
+<a href="https://github.com/jbalogh/django-cache-machine">django-cache-machine</a> - 自动缓存queryset结果，根据时间设定自动失效</li>
+<li>
+<a href="https://github.com/BertrandBordage/django-cachalot">django-cachalot</a> -跟上面一个作用，缓存查询结果并自动失效</li>
+<li>
+<a href="https://github.com/tvavrys/django-memoize">django-memoize</a> - 实现了 <a href="http://en.wikipedia.org/wiki/Memoization">memoization</a> 技术</li>
+</ul>
+
+<h2>
+<a id="兼容性" class="anchor" href="#%E5%85%BC%E5%AE%B9%E6%80%A7" aria-hidden="true"><span class="octicon octicon-link"></span></a>兼容性</h2>
+
+<p><strong>用来做兼容,可以让apps 在不同版本的django都可用</strong></p>
+
+<ul>
+<li>
+<a href="https://github.com/arteria/django-compat">django-compat</a> - django1.4.x 到 1.7.x 向后兼容</li>
+<li>
+<a href="https://github.com/ubernostrum/django-compat-lint">django-compat-lint</a> - 检查代码的兼容性</li>
+</ul>
+
+<h2>
+<a id="调试" class="anchor" href="#%E8%B0%83%E8%AF%95" aria-hidden="true"><span class="octicon octicon-link"></span></a>调试</h2>
+
+<p>** 协助查找bug的包 **</p>
+
+<ul>
+<li>
+<a href="https://github.com/django-debug-toolbar/django-debug-toolbar/">django-debug-toolbar</a> - A configurable set of panels that display various debug information about the current request/response.</li>
+<li>
+<a href="https://github.com/dcramer/django-devserver/">django-devserver</a> - A drop in replacement for Django's built-in runserver command.</li>
+<li>
+<a href="https://github.com/bradmontgomery/django-querycount/">django-querycount</a> - Middleware that Prints the number of DB queries to the runserver console.</li>
+<li>
+<a href="https://github.com/mtford90/silk/">django-silk</a> - Silky smooth profiling for Django</li>
+</ul>
+
+<h2>
+<a id="email" class="anchor" href="#email" aria-hidden="true"><span class="octicon octicon-link"></span></a>Email</h2>
+
+<p><em>Packages that help manage email sending.</em></p>
+
+<ul>
+<li>
+<a href="https://github.com/pmclanahan/django-celery-email/">django-celery-email</a> - A Django email backend that uses a celery task for sending the email.</li>
+<li>
+<a href="https://github.com/zapier/django-drip">django-drip</a> - Django Admin based management for drip email campaigns</li>
+<li>
+<a href="https://github.com/BradWhittington/django-mailgun/">django-mailgun</a> - A Django email backend for Mailgun.</li>
+<li>
+<a href="https://github.com/ui/django-post_office/">django-post_office</a> - A simple app to send and manage your emails in Django, supports templates and can be easily integrated with task queues.</li>
+<li>
+<a href="https://github.com/hmarr/django-ses/">django-ses</a> - A Django email backend for Amazon's Simple Email Service.</li>
+<li>
+<a href="https://github.com/brack3t/Djrill/">djrill</a> - Email backend and new message class for Mandrill transactional email service from MailChimp.</li>
+<li>
+<a href="https://github.com/BradWhittington/django-templated-email">django-templated-email</a> - Django module to easily send templated emails using django templates, or using a transactional mail provider (mailchimp, silverpop, etc.)</li>
+<li>
+<a href="https://github.com/APSL/django-yubin">django-yubin</a> - django-mailer2 + django-mailviews with some extras.</li>
+<li>
+<a href="https://github.com/20tab/django-spoolgore">django-spoolgore</a> - A django email backed for the Spoolgore daemon.</li>
+</ul>
+
+<h2>
+<a id="fields" class="anchor" href="#fields" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fields</h2>
+
+<p><em>Packages that extend the functionality of existing field type or add new field types.</em></p>
+
+<ul>
+<li>
+<a href="https://github.com/disqus/django-bitfield/">django-bitfield</a> - A BitField extension for Django models.</li>
+<li>
+<a href="https://github.com/5monkeys/django-enumfield/">django-enumfield</a> - Custom Django field for using enumerations of named constants.</li>
+<li>
+<a href="https://github.com/bonsaistudio/django-image-tools/">django-image-tools</a> - A package to handle images in Django.</li>
+<li>
+<a href="https://github.com/matthewwithanm/django-imagekit/">django-imagekit</a> - Automated image processing for Django.</li>
+<li>
+<a href="https://pypi.python.org/pypi/django-jsonfield">django-jsonfield</a> - JSONField for Django models.</li>
+<li>
+<a href="https://github.com/caioariede/django-location-field/">django-location-field</a> - Location field and widget integrated with google maps.</li>
+<li>
+<a href="https://github.com/gintas/django-picklefield/">django-picklefield</a> - A pickled object field for Django</li>
+<li>
+<a href="https://github.com/dcramer/django-uuidfield/">django-uuidfield</a> - A UUIDField for Django.</li>
+<li>
+<a href="https://github.com/SmileyChris/django-countries/">django-countries</a> - Provides country choices for forms, flag icons, and a CountryField.</li>
+</ul>
+
+<h2>
+<a id="file-transfers" class="anchor" href="#file-transfers" aria-hidden="true"><span class="octicon octicon-link"></span></a>File Transfers</h2>
+
+<p><em>Packages that help transfer files between projects and users</em></p>
+
+<ul>
+<li>
+<a href="https://github.com/benoitbryon/django-downloadview/">django-downloadview</a> - Serve files with Django.</li>
+<li>
+<a href="https://github.com/johnsensible/django-sendfile/">django-sendfile</a> - This is a wrapper around web-server specific methods for sending files to web clients.</li>
+</ul>
+
+<h2>
+<a id="forms" class="anchor" href="#forms" aria-hidden="true"><span class="octicon octicon-link"></span></a>Forms</h2>
+
+<p><em>Packages that extend the functionality of forms or add new types of forms.</em></p>
+
+<ul>
+<li>
+<a href="https://github.com/tzangms/django-bootstrap-form/">django-bootstrap-form</a> - Twitter Bootstrap for Django Form</li>
+<li>
+<a href="https://github.com/dyve/django-bootstrap3/">django-bootstrap3</a> - Use Bootstrap in your Django templates, the Django way.</li>
+<li>
+<a href="https://github.com/maraujop/django-crispy-forms/">django-crispy-forms</a> - The best way to have DRY Django forms. The app provides a tag and filter that lets you quickly render forms in a div format while providing an enormous amount of capability to configure and control the rendered HTML.</li>
+<li>
+<a href="https://github.com/gregmuellegger/django-floppyforms/">django-floppyforms</a> - django-floppyforms is an application that gives you full control of the output of forms rendering. The forms API and features are exactly the same as Django’s, the key difference is that fields and widgets are rendered in templates instead of using string interpolation, giving you full control of the output using Django templates.</li>
+</ul>
+
+<h2>
+<a id="restful-api" class="anchor" href="#restful-api" aria-hidden="true"><span class="octicon octicon-link"></span></a>RESTful API</h2>
+
+<p><em>Packages for developing RESTful APIs.</em></p>
+
+<ul>
+<li>
+<a href="http://github.com/funkybob/django-nap/">django-nap</a> - A minimalist approach to object serialization, RESTful views, and RPC views.</li>
+<li>
+<a href="http://www.django-rest-framework.org/">django-rest-framework</a> - A powerful and flexible toolkit that makes it easy to build Web APIs.</li>
+<li>
+<a href="https://github.com/marcgibbons/django-rest-swagger/">django-rest-swagger</a> - Swagger Documentation Generator for Django REST Framework</li>
+<li>
+<a href="http://tastypieapi.org/">django-tastypie</a> - Creating delicious APIs for Django apps since 2010.</li>
+<li>
+<a href="https://github.com/toastdriven/restless/">restless</a> - A lightweight REST miniframework for Python</li>
+</ul>
+
+<h2>
+<a id="migrations" class="anchor" href="#migrations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Migrations</h2>
+
+<p><em>Packages that help migrate the database when there are schema updates.</em></p>
+
+<ul>
+<li>
+<a href="https://bitbucket.org/andrewgodwin/south/src/">South</a> - Django application to provide schema and data migrations that supports Django up to 1.6.x. (<a href="https://docs.djangoproject.com/en/dev/topics/migrations/">Django 1.7 and up have an integrated migration system, based on but not compatible with South</a>)</li>
+</ul>
+
+<h2>
+<a id="mobile-support" class="anchor" href="#mobile-support" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mobile Support</h2>
+
+<p><em>Packages that help you support for mobile iOS, Android and Others</em></p>
+
+<ul>
+<li><p><a href="https://github.com/jleclanche/django-push-notifications">django-push-notifications</a> - A minimal Django app that implements Device models that can send messages through APNS and GCM.</p></li>
+<li><p><a href="https://github.com/rakanalh/django-pushy">django-pushy</a> - Django app that provides push notifications functionality with celery. The main purpose of this app is to help you send push notifications to your users at scale. If you have lots of registered device keys, django-pushy will split your keys into smaller groups which run in parallel making the process of sending notifications faster.</p></li>
+</ul>
+
+<h2>
+<a id="model-extensions" class="anchor" href="#model-extensions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Model Extensions</h2>
+
+<p><em>Packages that extend the functionality of models or add new classes of models.</em></p>
+
+<ul>
+<li>
+<a href="https://github.com/henriquebastos/django-aggregate-if/">django-aggregate-if</a> - Conditional aggregates for Django queries, just like the famous SumIf and CountIf in Excel.</li>
+<li>
+<a href="https://github.com/django/django-localflavor/">django-localflavor</a> - Country-specific Django helpers, formerly of contrib fame.</li>
+<li>
+<a href="https://github.com/carljm/django-model-utils/">django-model-utils</a> - Django model mixins and utilities.</li>
+<li>
+<a href="https://github.com/django-mptt/django-mptt/">django-mptt</a> - Utilities for implementing a modified pre-order traversal tree in django.</li>
+<li>
+<a href="https://github.com/tabo/django-treebeard">django-treebeard</a> -Alternative tree data structures for Django (provides 3 different methods for storing hierarchical data, including MPTT )</li>
+</ul>
+
+<h2>
+<a id="payment-processing" class="anchor" href="#payment-processing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Payment Processing</h2>
+
+<p><em>Packages that provide payment processing provider integration.</em></p>
+
+<ul>
+<li>
+<a href="https://github.com/pydanny/dj-stripe/">dj-stripe</a> - Django + Stripe Made Easy.</li>
+<li>
+<a href="https://github.com/agiliq/merchant/">django-merchant</a> - A Django app that provides helpers for multiple pluggable payment backends.</li>
+<li>
+<a href="https://github.com/spookylukey/django-paypal">django-paypal</a> - A pluggable Django application for integrating PayPal Payments Standard or Payments Pro.</li>
+<li>
+<a href="https://github.com/rossp/django-pinpayments/">django-pinpayments</a> - Django library to simplify payment processing with pin.</li>
+<li>
+<a href="https://github.com/oscaro/django-oscar-adyen/">django-oscar-adyen</a> - This package provides integration with the Adyen payment gateway. It is designed to work seamlessly with the e-commerce framework django-oscar but can be used without Oscar.</li>
+<li>
+<a href="https://github.com/django-oscar/django-oscar-paymentexpress/">django-oscar-paymentexpress</a> - This package provides integration with the payment gateway, PaymentExpress using their PX POST API. It is designed to work seamlessly with the e-commerce framework django-oscar but can be used without it.</li>
+<li>
+<a href="https://github.com/django-oscar/django-oscar-paypal/">django-oscar-paypal</a> - PayPal integration for django-oscar. Can be used without Oscar too.</li>
+<li>
+<a href="https://github.com/GoodCloud/django-zebra/">django-zebra</a> - Forms, widgets, template tags and examples that make Stripe + Django easier.</li>
+</ul>
+
+<h2>
+<a id="project-management" class="anchor" href="#project-management" aria-hidden="true"><span class="octicon octicon-link"></span></a>Project Management</h2>
+
+<ul>
+<li>
+<a href="https://github.com/caktus/django-timepiece/">django-timepiece</a> - A multi-user Django application for tracking people's time on projects.</li>
+</ul>
+
+<h2>
+<a id="search" class="anchor" href="#search" aria-hidden="true"><span class="octicon octicon-link"></span></a>Search</h2>
+
+<p><em>Packages that provide search capabilities to projects.</em></p>
+
+<ul>
+<li>
+<a href="https://github.com/toastdriven/django-haystack/">django-haystack</a> - Modular search for Django.</li>
+<li>
+<a href="https://github.com/etianen/django-watson/">django-watson</a> - Fast multi-model full-text search plugin.</li>
+</ul>
+
+<h2>
+<a id="security" class="anchor" href="#security" aria-hidden="true"><span class="octicon octicon-link"></span></a>Security</h2>
+
+<p><em>Packages that improve the security of a project.</em></p>
+
+<ul>
+<li>
+<a href="https://github.com/dmpayton/django-admin-honeypot/">django-admin-honeypot</a> - A fake Django admin login screen to notify admins of attempted unauthorized access.</li>
+<li>
+<a href="https://github.com/django-pci/django-axes/">django-axes</a> - is a very simple way for you to keep track of failed login attempts, both for the Django admin and for the rest of your site.</li>
+<li>
+<a href="https://github.com/lpomfrey/django-debreach/">django-debreach</a> - BREACH mitigation for Django apps.</li>
+<li>
+<a href="https://github.com/atugushev/django-password-session/">django-password-session</a> - Invalidate all active sessions after change password (<a href="https://docs.djangoproject.com/en/dev/topics/auth/default/#session-invalidation-on-password-change">not needed for Django 1.7+</a>).</li>
+<li>
+<a href="https://github.com/carljm/django-secure/">django-secure</a> - Helping you remember to do the stupid little things to improve your Django site's security.</li>
+<li>
+<a href="https://github.com/mgrouchy/django-stronghold/">django-stronghold</a> - Stronghold is middleware to default all your views to login required.</li>
+<li>
+<a href="https://github.com/rdegges/django-sslify/">django-sslify</a> - Force SSL on your Django site.</li>
+</ul>
+
+<h2>
+<a id="seo" class="anchor" href="#seo" aria-hidden="true"><span class="octicon octicon-link"></span></a>SEO</h2>
+
+<p><em>Packages that help improve SEO ( Search Engine Optimization ) of projects.</em></p>
+
+<ul>
+<li>
+<a href="https://github.com/nephila/django-meta/">django-meta</a> - a pluggable app to allow Django developers to quickly add meta tags and OpenGraph, Twitter, and Google Plus properties to their HTML responses.</li>
+<li>
+<a href="https://github.com/willhardy/django-seo/">django-seo</a> - Provides a set of tools for managing Search Engine Optimisation (SEO) for Django sites.</li>
+<li>
+<a href="https://github.com/jezdez/django-robots">django-robots</a> - A Django app for managing robots.txt files following the robots exclusion protocol.</li>
+</ul>
+
+<h2>
+<a id="settings" class="anchor" href="#settings" aria-hidden="true"><span class="octicon octicon-link"></span></a>Settings</h2>
+
+<p><em>Packages that help manage the configurability of projects.</em></p>
+
+<ul>
+<li>
+<a href="https://github.com/jezdez/django-configurations/">django-configurations</a> - A helper for organizing Django project settings by relying on well established programming patterns.</li>
+<li>
+<a href="https://github.com/jezdez/django-constance/">django-constance</a> - A Django app for storing dynamic settings in pluggable backends (Redis and Django model backend built in) with an integration with the Django admin app.</li>
+<li>
+<a href="https://github.com/henriquebastos/python-decouple/">python-decouple</a> - Strict separation of config from code.</li>
+</ul>
+
+<h2>
+<a id="storage" class="anchor" href="#storage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Storage</h2>
+
+<p><em>Packages that extend the functionality of the existing storage backend or provide new storage backends.</em></p>
+
+<ul>
+<li>
+<a href="https://bitbucket.org/david/django-storages/src/">django-storages</a> - django-storages is a collection of custom storage backends for Django.</li>
+<li>
+<a href="https://github.com/jezdez/django-queued-storage/">django-queued-storage</a> - Provides a proxy for Django storage backends that allows you to upload files locally and eventually serve them remotely.</li>
+</ul>
+
+<h2>
+<a id="tagging" class="anchor" href="#tagging" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tagging</h2>
+
+<ul>
+<li>
+<a href="https://github.com/alex/django-taggit/">django-taggit</a> - Simple tagging for Django.</li>
+</ul>
+
+<h2>
+<a id="task-queue" class="anchor" href="#task-queue" aria-hidden="true"><span class="octicon octicon-link"></span></a>Task Queue</h2>
+
+<p><em>Packages that make working with task/background queues easier.</em></p>
+
+<ul>
+<li>
+<a href="http://celery.github.io/django-celery/">django-celery</a> - Celery Integration for Django. (no longer required for Celery 3.1 and up)</li>
+<li>
+<a href="https://github.com/ui/django-rq">django-rq</a> - The easiest way to monitor and use <a href="http://python-rq.org">RQ</a> in your Django projects.</li>
+<li>
+<a href="https://github.com/coleifer/huey/">huey</a> - A little multi-threaded task queue for python.</li>
+</ul>
+
+<h2>
+<a id="testing" class="anchor" href="#testing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Testing</h2>
+
+<p><em>Packages that help test code or generate test data.</em></p>
+
+<ul>
+<li>
+<a href="https://github.com/django-behave/django-behave/">django-behave</a> - TestRunner for the Behave BDD module.</li>
+<li>
+<a href="https://github.com/joke2k/django-faker/">django-faker</a> - Fake-factory to generate test data.</li>
+<li>
+<a href="https://github.com/paulocheque/django-dynamic-fixture">django-dynamic-fixture</a> - A complete library to create dynamic model instances for testing purposes.</li>
+<li>
+<a href="https://github.com/kmmbvnr/django-jenkins">django-jenkins</a> - Plug and play continuous integration with django and jenkins.</li>
+<li>
+<a href="https://github.com/django-nose/django-nose/">django-nose</a> - Test runner using nose.</li>
+<li>
+<a href="https://github.com/dragoon/django-selenium/">django-selenium</a> - Selenium testing support.</li>
+<li>
+<a href="https://github.com/realpython/django-discover-slowest-tests-runner/">django-slowtests</a> - Locate your slowest tests.</li>
+<li>
+<a href="https://github.com/rbarrois/factory_boy/">factory_boy</a> - A test fixtures replacement for Python</li>
+<li>
+<a href="https://github.com/stringfellow/lettuce-django-terrain/">lettuce-django-terrain</a> - Terrain file for lettuce in django projects</li>
+<li>
+<a href="https://github.com/vandersonmota/model_mommy/">model-mommy</a> - Smart fixtures for better tests.</li>
+<li>
+<a href="https://pypi.python.org/pypi/pytest-django/">pytest-django</a> - Test runner using py.test</li>
+<li>
+<a href="https://github.com/cobrateam/splinter/">splinter</a> - Test framework for web applications.</li>
+</ul>
+
+<h2>
+<a id="thumbnail" class="anchor" href="#thumbnail" aria-hidden="true"><span class="octicon octicon-link"></span></a>Thumbnail</h2>
+
+<p><em>Packages that help generate thumbnails.</em></p>
+
+<ul>
+<li>
+<a href="https://github.com/mariocesar/sorl-thumbnail/">sorl-thumbnail</a> - Thumbnails for Django.</li>
+<li>
+<a href="https://github.com/codingjoe/django-stdimage/">django-stdimage</a> - Thumbnails and image utils for Django.</li>
+<li>
+<a href="https://github.com/SmileyChris/easy-thumbnails">easy-thumbnails</a> - Easy thumbnails for Django.</li>
+</ul>
+
+<h2>
+<a id="cropping-image" class="anchor" href="#cropping-image" aria-hidden="true"><span class="octicon octicon-link"></span></a>Cropping Image</h2>
+
+<p><em>Packages that help to crop Images.</em></p>
+
+<ul>
+<li>
+<a href="https://github.com/jonasundderwolf/django-image-cropping">django-image-cropping</a> - Cropping Image for Django.</li>
+</ul>
+
+<h2>
+<a id="translations" class="anchor" href="#translations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Translations</h2>
+
+<p><em>Packages help with the task of translating projects.</em></p>
+
+<ul>
+<li>
+<a href="https://github.com/RouteAtlas/django-klingon/">django-klingon</a> - An attempt to make django model translations suckless and with no integrations pain in your app.</li>
+<li>
+<a href="https://github.com/deschler/django-modeltranslation/">django-modeltranslation</a> - Translate dynamic content of existing Django models to an arbitrary number of languages without having to change the original model classes.</li>
+<li>
+<a href="https://github.com/mbi/django-rosetta/">django-rosetta</a> - Rosetta is a Django application that eases the translation process of your Django projects.</li>
+<li>
+<a href="https://github.com/edoburu/django-parler">django-parler</a> - Simple Django model translations without nasty hacks</li>
+<li>
+<a href="https://github.com/KristianOellegaard/django-hvad">django-hvad</a> - Painless translations in django, using the regular ORM. Integrates easily into existing projects and apps. Easy convertible from django-multilingual-ng.</li>
+</ul>
+
+<h2>
+<a id="web-frontend-integration" class="anchor" href="#web-frontend-integration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Web frontend integration</h2>
+
+<ul>
+<li>
+<a href="https://github.com/jrief/django-angular/">django-angular</a> - Let AngularJS play well with Django.</li>
+<li>
+<a href="https://github.com/appliedsec/djangular/">djangular</a> - A reusable Django app that provides better integration and tools for Angular.js.</li>
+<li>
+<a href="https://github.com/ierror/django-js-reverse">django-js-reverse</a> - Javascript url handling for Django that doesn't hurt.</li>
+</ul>
+
+<h2>
+<a id="wysiwyg-editors" class="anchor" href="#wysiwyg-editors" aria-hidden="true"><span class="octicon octicon-link"></span></a>WYSIWYG Editors</h2>
+
+<p><em>Packages that makes text editing awesome.</em></p>
+
+<ul>
+<li>
+<a href="https://github.com/django-ckeditor/django-ckeditor/">django-ckeditor</a> - Django admin CKEditor integration.</li>
+<li>
+<a href="https://github.com/summernote/django-summernote/">django-summernote</a> - Summernote is a simple WYSIWYG editor. django-summernote allows you to embed Summernote into Django very handy. Support admin mixins and widgets.</li>
+<li>
+<a href="https://github.com/aljosa/django-tinymce/">django-tinymce</a> - TinyMCE integration for Django.</li>
+<li>
+<a href="https://github.com/pydanny/django-wysiwyg/">django-wysiwyg</a> - A Django application for making Django textareas rich text editors. Certainly as a template tag and possibly as a form widget.</li>
+<li>
+<a href="https://github.com/douglasmiranda/django-wysiwyg-redactor/">django-wysiwyg-redactor</a> - A lightweight wysiwyg editor for Django.</li>
+</ul>
+
+<h2>
+<a id="wiki-apps" class="anchor" href="#wiki-apps" aria-hidden="true"><span class="octicon octicon-link"></span></a>Wiki apps</h2>
+
+<ul>
+<li>
+<a href="https://github.com/django-wiki/django-wiki">django-wiki</a> A wiki system with complex functionality for simple integration and a superb interface. Store your knowledge with style: Use django models.</li>
+<li>
+<a href="https://github.com/mgaitan/waliki">waliki</a> An extensible wiki app for Django with a Git backend.</li>
+</ul>
+
+<h2>
+<a id="workflows" class="anchor" href="#workflows" aria-hidden="true"><span class="octicon octicon-link"></span></a>Workflows</h2>
+
+<p><em>Packages that do process, procedure and/or business tasks management.</em></p>
+
+<ul>
+<li>
+<a href="https://github.com/carlio/django-flows/">django-flows</a> - django-flows keeps state and position in complicated flows of logic, allowing optional branches and complicated paths through a series of individual user actions.</li>
+<li>
+<a href="https://github.com/kmmbvnr/django-fsm/">django-fsm</a> - Django friendly finite state machine support.</li>
+<li>
+<a href="https://github.com/vikingco/django-states2/">django-states</a> - State machine for django models.</li>
+<li>
+<a href="https://github.com/kmmbvnr/django-viewflow/">django-viewflow</a> - Reusable workflow library for Django.</li>
+<li>
+<a href="https://bitbucket.org/jerzyk/django-workflows/">django-workflows</a> - django-workflows provides a generic workflow engine for Django.</li>
+<li>
+<a href="https://github.com/rbarrois/django_xworkflows/">django-xworkflows</a> - Library to plug xworkflows into django models.</li>
+</ul>
+
+<h2>
+<a id="other" class="anchor" href="#other" aria-hidden="true"><span class="octicon octicon-link"></span></a>Other</h2>
+
+<ul>
+<li>
+<a href="https://github.com/audreyr/cookiecutter/">cookiecutter</a> - A command-line utility that creates projects from cookiecutters (project templates).</li>
+<li>
+<a href="https://github.com/kennethreitz/dj-database-url/">dj-database-url</a> - Utilize the 12factor inspired DATABASE_URL environment variable to configure your Django application.</li>
+<li>
+<a href="https://github.com/hellysmile/django-activeurl">django-activeurl</a> - Easy to use active URL highlighting for django</li>
+<li>
+<a href="https://github.com/justquick/django-activity-stream/">django-activity-stream</a> - Generate generic activity streams from the actions on your site. Users can follow any actors' activities for personalized streams.</li>
+<li>
+<a href="https://github.com/saxix/django-adminactions/">django-adminactions</a> - Collection of useful actions to use with django.contrib.admin.ModelAdmin and/or django.contrib.admin.AdminSite</li>
+<li>
+<a href="https://github.com/rosarior/django-autoadmin/">django-autoadmin</a> - Automatic admin users for Django projects.</li>
+<li>
+<a href="https://github.com/brack3t/django-braces/">django-braces</a> - Reusable, generic mixins for Django.</li>
+<li>
+<a href="https://github.com/angvp/django-changuito/">django-changuito</a> - A cart app for your django site, an updated fork of django-cart</li>
+<li>
+<a href="https://github.com/django-extensions/django-extensions/">django-extensions</a> - This is a repository for collecting global custom management extensions for the Django Framework.</li>
+<li>
+<a href="https://github.com/alex/django-filter/">django-filter</a> - A generic system for filtering Django QuerySets based on user selections.</li>
+<li>
+<a href="https://github.com/revsys/django-friendship/">django-friendship</a> - Django app to manage following and bi-directional friendships.</li>
+<li>
+<a href="https://github.com/twaddington/django-gravatar/">django-gravatar2</a> - Essential Gravatar support for Django. Features helper methods, templatetags and a full test suite!</li>
+<li>
+<a href="https://github.com/fitoria/django-magicembed/">django-magic-embed</a> - an easy and simple Django template tag and tool to embed video and get thumbnails from video providers.</li>
+<li>
+<a href="https://bitbucket.org/carljm/django-markitup/src/">django-markitup</a> - A Django reusable application for end-to-end markup handling.</li>
+<li>
+<a href="https://github.com/ericflo/django-pagination">django-pagination</a> - <a href="https://github.com/ericflo/django-pagination">https://github.com/ericflo/django-pagination</a>.</li>
+<li>
+<a href="https://github.com/tomwalker/django_quiz/">django-quiz-app</a> - This is a configurable quiz app for Django.</li>
+<li>
+<a href="https://github.com/praekelt/django-recaptcha/">django-recaptcha</a> - Django reCAPTCHA form field/widget integration app.</li>
+<li>
+<a href="https://github.com/semente/django-smuggler/">django-smuggler</a> - Django Smuggler is a pluggable application for Django Web Framework that helps you to import/export fixtures via the automatically-generated administration interface.</li>
+<li>
+<a href="https://github.com/lazybird/django-solo/">django-solo</a> - Helps working with singletons - things like global settings that you want to edit from the admin site.</li>
+<li>
+<a href="https://github.com/epantry/django-sql-explorer/">django-sql-explorer</a> - Easily share data via SQL queries, right from Django</li>
+<li>
+<a href="https://github.com/jsocol/django-ratelimit/">django-ratelimit</a> - provides a decorator to rate-limit views. Limiting can be based on IP address or a field in the request--either a GET or POST variable.</li>
+<li>
+<a href="https://github.com/un33k/django-uuslug/">django-uuslug</a> - a slugify application that guarantees Uniqueness and handles Unicode.</li>
+<li>
+<a href="https://github.com/mwarkentin/django-watchman/">django-watchman</a> - django-watchman exposes a status endpoint for your backing services like databases, caches, etc.</li>
+<li>
+<a href="http://tryolabs.github.io/metamon/">metamon</a> - Collection of Ansible playbooks to quickly start your Django Application</li>
+<li>
+<a href="https://github.com/coleifer/micawber/">micawber</a> - A small library for extracting rich content from urls.</li>
+</ul>
+
+<h1>
+<a id="projects" class="anchor" href="#projects" aria-hidden="true"><span class="octicon octicon-link"></span></a>Projects</h1>
+
+<p><em>Outstanding Django projects.</em></p>
+
+<h2>
+<a id="cms" class="anchor" href="#cms" aria-hidden="true"><span class="octicon octicon-link"></span></a>CMS</h2>
+
+<ul>
+<li>
+<a href="https://github.com/divio/django-cms/">django-cms</a> - The easy-to-use and developer-friendly CMS.</li>
+<li>
+<a href="https://github.com/stephenmcd/mezzanine/">mezzanine</a> - A content management platform built using the Django framework.</li>
+<li>
+<a href="https://github.com/torchbox/wagtail/">wagtail</a> - A new Django content management system.</li>
+<li>
+<a href="https://github.com/ridethepony/django-fiber">django-fiber</a> - Django Fiber, a simple, user-friendly CMS for all your Django projects</li>
+</ul>
+
+<h2>
+<a id="document-management" class="anchor" href="#document-management" aria-hidden="true"><span class="octicon octicon-link"></span></a>Document Management</h2>
+
+<ul>
+<li>
+<a href="https://github.com/mayan-edms/mayan-edms/">mayan-edms</a> - Open source, Django based DMS (document management system) with custom metadata indexing, file serving integration, OCR capabilities, document versioning and electronic signature verification.</li>
+</ul>
+
+<h2>
+<a id="e-commerce" class="anchor" href="#e-commerce" aria-hidden="true"><span class="octicon octicon-link"></span></a>e-Commerce</h2>
+
+<ul>
+<li>
+<a href="https://bitbucket.org/chris1610/satchmo/src/">Satchmo</a> - Satchmo is an eCommerce framework created in Django which allows you to develop unique and robust online stores.</li>
+<li>
+<a href="https://github.com/tangentlabs/django-oscar/">django-oscar</a> - Domain-driven e-commerce for Django.</li>
+</ul>
+
+<h2>
+<a id="other-1" class="anchor" href="#other-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Other</h2>
+
+<ul>
+<li>
+<a href="https://github.com/pydanny/djangopackages/">Django packages</a> - Django Packages is a directory of reusable apps, sites, tools, and more for your Django projects.</li>
+</ul>
+
+<h2>
+<a id="project-management-1" class="anchor" href="#project-management-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Project Management</h2>
+
+<ul>
+<li>
+<a href="https://github.com/orges/itsy/">ITSY</a> - Issue Tracking System</li>
+<li>
+<a href="https://github.com/taigaio/taiga-back">taiga</a> - Agile, Free and Open Source Project Management Tool</li>
+</ul>
+
+<h1>
+<a id="resources" class="anchor" href="#resources" aria-hidden="true"><span class="octicon octicon-link"></span></a>Resources</h1>
+
+<p>Where to discover new Django apps and projects.</p>
+
+<h2>
+<a id="books" class="anchor" href="#books" aria-hidden="true"><span class="octicon octicon-link"></span></a>Books</h2>
+
+<ul>
+<li>
+<a href="http://www.lightbird.net/dbe/">Django by Example</a> (1.2)</li>
+<li>
+<a href="http://lightbird.net/dbe2/">Django by Example for Django 1.5</a> (1.5)</li>
+<li><a href="http://agiliq.com/books/djenofdjango/">Djen of Django</a></li>
+<li>
+<a href="http://effectivedjango.com/">Effective Django</a> (1.5)</li>
+<li>
+<a href="http://gettingstartedwithdjango.com/">Getting started with Django</a> (video)</li>
+<li>
+<a href="http://www.tangowithdjango.com/">Tango With Django</a> (1.5)</li>
+<li>
+<a href="http://chimera.labs.oreilly.com/books/1234000000754/index.html">Test-Driven Web Development with Python</a> (1.7)</li>
+<li><a href="http://www.djangobook.com/en/2.0/">The Django book</a></li>
+<li>
+<a href="http://twoscoopspress.org/products/two-scoops-of-django-1-6/">Two Scoops of Django: Best Practices for Django 1.6</a> - Making Python and Django as fun as ice cream.</li>
+</ul>
+
+<h2>
+<a id="websites" class="anchor" href="#websites" aria-hidden="true"><span class="octicon octicon-link"></span></a>Websites</h2>
+
+<ul>
+<li>
+<a href="https://www.djangopackages.com/">Django Packages</a> - Django Packages is a directory of reusable apps, sites, tools, and more for your Django projects.</li>
+<li>
+<a href="https://www.djangosites.org">Django Sites</a> - Django Sites is a showcase of websites powered by Django.</li>
+<li>
+<a href="http://www.fullstackpython.com/django.html">Full Stack Python's Django page</a> - contains explanations for Django's philosophy and its components along with links to other resources and tutorials.</li>
+<li>
+<a href="http://www.django-introduction.com/">Django Introduction</a> - A reusable set of slides to educate more people about Django.</li>
+<li>
+<a href="http://tutorial.djangogirls.org/">Django Girls Tutorial</a> - A fun and engaging tutorial showing how to build a blog using Django and deploy it to Heroku.</li>
+</ul>
+
+<h2>
+<a id="conferences" class="anchor" href="#conferences" aria-hidden="true"><span class="octicon octicon-link"></span></a>Conferences</h2>
+
+<ul>
+<li>
+<a href="http://www.djangobeer.com/">Django Beer</a> - the new meeting of the Django community of Florence.</li>
+<li>
+<a href="http://djangovillage.it/">Django Village</a> - the Italian Django community conference. An opportunity to meet djangonauts from all over Italy and abroad.</li>
+<li>
+<a href="http://djangoweekend.org/">Django Weekend</a> - is a Django/Python non-profit community event, organised and run entirely by volunteers. The conference is Django-focused, but all aspects of Python fall within its remit.</li>
+<li>
+<a href="http://www.djangounderthehood.com/">Django: Under The Hood</a> - is an exciting new Django conference for experienced Django developers. Come and learn about the internals of Django, and help to shape its future.</li>
+<li>
+<a href="http://www.djangocon.eu/">DjangoCon Europe</a> - is the annual largest European-based Django conference that is usually held in late spring.</li>
+<li>
+<a href="http://www.djangocon.us/">DjangoCon US</a> - is the largest North American Django conference generally held the first week in September each year.</li>
+</ul>
+
+<h2>
+<a id="videos" class="anchor" href="#videos" aria-hidden="true"><span class="octicon octicon-link"></span></a>Videos</h2>
+
+<ul>
+<li>
+<a href="https://github.com/rosarior/django-must-watch/">Must Watch Django Videos</a> - Must-watch videos about Django (or about Python as applied to Django)</li>
+</ul>
+
+<h1>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributing</h1>
+
+<p>Just fork and send a pull request with your awesome Django apps, projects or resources.</p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
     </div>
-    <div class='right'>
-      <!-- GitHub buttons: see http://ghbtns.com -->
-      <iframe src="http://ghbtns.com/github-btn.html?user=rosarior&amp;repo=awesome-django&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-      <iframe src="http://ghbtns.com/github-btn.html?user=rosarior&amp;repo=awesome-django&amp;type=fork&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-    </div>
-  </div>
-
-  <div class='content-root'>
-    <div class='menubar'>
-      <div class='menu section' role='flatdoc-menu'></div>
-    </div>
-    <div role='flatdoc-content' class='content'></div>
-  </div>
-</body>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
 </html>
