@@ -127,27 +127,28 @@
 
 **协助查找bug的包**
 
-* [django-debug-toolbar](https://github.com/django-debug-toolbar/django-debug-toolbar/) - A configurable set of panels that display various debug information about the current request/response.
-* [django-devserver](https://github.com/dcramer/django-devserver/) - A drop in replacement for Django's built-in runserver command.
-* [django-querycount](https://github.com/bradmontgomery/django-querycount/) - Middleware that Prints the number of DB queries to the runserver console.
-* [django-silk](https://github.com/mtford90/silk/) - Silky smooth profiling for Django
+* [django-debug-toolbar](https://github.com/django-debug-toolbar/django-debug-toolbar/) - 通过可配置化的面板来展现每个请求和应答的debug信息
+* [django-devserver](https://github.com/dcramer/django-devserver/) - 可以代替django自身的dev server的命令行工具
+* [django-querycount](https://github.com/bradmontgomery/django-querycount/) - 可以查看django 查询数据库次数的中间件
+* [django-silk](https://github.com/mtford90/silk/) - 分析django性能的工具
 
 ## Email
 
-*Packages that help manage email sending.*
+**邮件发送相关的包**
 
-* [django-celery-email](https://github.com/pmclanahan/django-celery-email/) - A Django email backend that uses a celery task for sending the email.
-* [django-drip](https://github.com/zapier/django-drip) - Django Admin based management for drip email campaigns
-* [django-mailgun](https://github.com/BradWhittington/django-mailgun/) - A Django email backend for Mailgun.
-* [django-post_office](https://github.com/ui/django-post_office/) - A simple app to send and manage your emails in Django, supports templates and can be easily integrated with task queues.
-* [django-ses](https://github.com/hmarr/django-ses/) - A Django email backend for Amazon's Simple Email Service.
-* [djrill](https://github.com/brack3t/Djrill/) - Email backend and new message class for Mandrill transactional email service from MailChimp.
-* [django-templated-email](https://github.com/BradWhittington/django-templated-email) - Django module to easily send templated emails using django templates, or using a transactional mail provider (mailchimp, silverpop, etc.)
-* [django-yubin](https://github.com/APSL/django-yubin) - django-mailer2 + django-mailviews with some extras.
-* [django-spoolgore](https://github.com/20tab/django-spoolgore) - A django email backed for the Spoolgore daemon.
+* [django-celery-email](https://github.com/pmclanahan/django-celery-email/) - 使用celery 的异步任务来发送邮件
+* [django-drip](https://github.com/zapier/django-drip) - 通过django admin 来管理邮件情况，有邮件模板，还可以查询邮件记录
+* [django-mailgun](https://github.com/BradWhittington/django-mailgun/) -  基于 Mailgun 的django邮件后端
+* [django-post_office](https://github.com/ui/django-post_office/) - 一个简单的app，可以在django中发送和管理邮件，支持模板，也很容易集成到任务队列中
+* [django-ses](https://github.com/hmarr/django-ses/) - Amazon's Simple Email Service 服务的django 后端实现
+* [djrill](https://github.com/brack3t/Djrill/) - MailChimp 的Mandrill 事务性邮件的后端
+* [django-templated-email](https://github.com/BradWhittington/django-templated-email) -
+可以使用django templates 来发送邮件的模块，还可以集成 （mailchimp, silverpop, 等） 邮件服务提供商的服务
+* [django-yubin](https://github.com/APSL/django-yubin) - django-mailer2 + django-mailviews 还有些拓展
+* [django-spoolgore](https://github.com/20tab/django-spoolgore) -  基于Spoolgore daemon的后端
 
 
-## Fields
+## 字段
 
 *Packages that extend the functionality of existing field type or add new field types.*
 
@@ -440,7 +441,7 @@ Where to discover new Django apps and projects.
 
 ## Conferences
 
-* [Django Beer](http://www.djangobeer.com/) - the new meeting of the Django community of Florence.
+* [Django Beer](http://www.djangobeer.com/) -  Florence 地区的django社区的聚会
 * [Django Village](http://djangovillage.it/) - the Italian Django community conference. An opportunity to meet djangonauts from all over Italy and abroad.
 * [Django Weekend](http://djangoweekend.org/) - is a Django/Python non-profit community event, organised and run entirely by volunteers. The conference is Django-focused, but all aspects of Python fall within its remit.
 * [Django: Under The Hood](http://www.djangounderthehood.com/) - is an exciting new Django conference for experienced Django developers. Come and learn about the internals of Django, and help to shape its future.
@@ -449,8 +450,9 @@ Where to discover new Django apps and projects.
 
 ## Videos
 
-* [Must Watch Django Videos](https://github.com/rosarior/django-must-watch/) - Must-watch videos about Django (or about Python as applied to Django)
+* [Must Watch Django Videos](https://github.com/rosarior/django-must-watch/) - django 必看视频收集
 
-# Contributing
+# 贡献
 
-Just fork and send a pull request with your awesome Django apps, projects or resources.
+fork 过来 然后发送一个 PR 到这个项目就行了。
+
