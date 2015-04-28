@@ -163,19 +163,19 @@
 * [django-countries](https://github.com/SmileyChris/django-countries/) - Provides country choices for forms, flag icons, and a CountryField.
 
 
-## File Transfers
+## 文件传输
 
-*Packages that help transfer files between projects and users*
+**可以帮助用户和项目之间传输文件的包**
 
-* [django-downloadview](https://github.com/benoitbryon/django-downloadview/) - Serve files with Django.
-* [django-sendfile](https://github.com/johnsensible/django-sendfile/) - This is a wrapper around web-server specific methods for sending files to web clients.
+* [django-downloadview](https://github.com/benoitbryon/django-downloadview/) - Django的文件服务
+* [django-sendfile](https://github.com/johnsensible/django-sendfile/) - 封装了服务端往web客户端发送文件的方法，对于HTTPResponse 的封装
 
-## Forms
+## 表单
 
-*Packages that extend the functionality of forms or add new types of forms.*
+**这些包拓展了表单的方法和类型**
 
-* [django-bootstrap-form](https://github.com/tzangms/django-bootstrap-form/) - Twitter Bootstrap for Django Form
-* [django-bootstrap3](https://github.com/dyve/django-bootstrap3/) - Use Bootstrap in your Django templates, the Django way.
+* [django-bootstrap-form](https://github.com/tzangms/django-bootstrap-form/) -  基于Bootstrap的Form封装
+* [django-bootstrap3](https://github.com/dyve/django-bootstrap3/) - 在你的django模板中使用Bootstrap，Django的方式
 * [django-crispy-forms](https://github.com/maraujop/django-crispy-forms/) - The best way to have DRY Django forms. The app provides a tag and filter that lets you quickly render forms in a div format while providing an enormous amount of capability to configure and control the rendered HTML.
 * [django-floppyforms](https://github.com/gregmuellegger/django-floppyforms/) - django-floppyforms is an application that gives you full control of the output of forms rendering. The forms API and features are exactly the same as Django’s, the key difference is that fields and widgets are rendered in templates instead of using string interpolation, giving you full control of the output using Django templates.
 
