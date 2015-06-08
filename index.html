@@ -20,7 +20,7 @@
 
     <section class="main-content">
       <h1>
-<a id="-awesome-django" class="anchor" href="#-awesome-django" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://rosarior.github.io/awesome-django/"><img src="https://raw.githubusercontent.com/rosarior/awesome-django/gh-pages/images/logo-small.png" align="absmiddle"> Awesome Django</a>
+<a id="-awesome-django了不起的django" class="anchor" href="#-awesome-django%E4%BA%86%E4%B8%8D%E8%B5%B7%E7%9A%84django" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="http://rosarior.github.io/awesome-django/"><img src="https://raw.githubusercontent.com/rosarior/awesome-django/gh-pages/images/logo-small.png" align="absmiddle"> Awesome Django(了不起的Django)</a>
 </h1>
 
 <blockquote>
@@ -45,21 +45,21 @@
 <li><a href="#email">邮件</a></li>
 <li><a href="#fields">字段</a></li>
 <li><a href="#file-transfers">文件传输</a></li>
-<li><a href="#forms">Forms</a></li>
-<li><a href="#migrations">Migrations</a></li>
-<li><a href="#mobile-support">Mobile Support</a></li>
-<li><a href="#model-extensions">Model Extensions</a></li>
-<li><a href="#payment-processing">Payment Processing</a></li>
-<li><a href="#project-management">Project Management</a></li>
+<li><a href="#forms">表单</a></li>
+<li><a href="#migrations">迁移</a></li>
+<li><a href="#mobile-support">移动端支持</a></li>
+<li><a href="#model-extensions">模型拓展</a></li>
+<li><a href="#payment-processing">支付相关</a></li>
+<li><a href="#project-management">项目控制</a></li>
 <li><a href="#restful-api">RESTful API</a></li>
-<li><a href="#search">Search</a></li>
-<li><a href="#security">Security</a></li>
+<li><a href="#search">搜索</a></li>
+<li><a href="#security">安全</a></li>
 <li><a href="#seo">SEO</a></li>
 <li><a href="#settings">Settings</a></li>
-<li><a href="#storage">Storage</a></li>
-<li><a href="#tagging">Tagging</a></li>
-<li><a href="#task-queue">Task Queue</a></li>
-<li><a href="#testing">Testing</a></li>
+<li><a href="#storage">存储</a></li>
+<li><a href="#tagging">标签</a></li>
+<li><a href="#task-queue">任务队列</a></li>
+<li><a href="#testing">测试</a></li>
 <li><a href="#thumbnail">Thumbnail</a></li>
 <li><a href="#cropping-image">Cropping Images</a></li>
 <li><a href="#translations">Translations</a></li>
@@ -225,89 +225,88 @@
 
 <ul>
 <li>
-<a href="https://github.com/django-debug-toolbar/django-debug-toolbar/">django-debug-toolbar</a> - A configurable set of panels that display various debug information about the current request/response.</li>
+<a href="https://github.com/django-debug-toolbar/django-debug-toolbar/">django-debug-toolbar</a> - 通过可配置化的面板来展现每个请求和应答的debug信息</li>
 <li>
-<a href="https://github.com/dcramer/django-devserver/">django-devserver</a> - A drop in replacement for Django's built-in runserver command.</li>
+<a href="https://github.com/dcramer/django-devserver/">django-devserver</a> - 可以代替django自身的dev server的命令行工具</li>
 <li>
-<a href="https://github.com/bradmontgomery/django-querycount/">django-querycount</a> - Middleware that Prints the number of DB queries to the runserver console.</li>
+<a href="https://github.com/bradmontgomery/django-querycount/">django-querycount</a> - 可以查看django 查询数据库次数的中间件</li>
 <li>
-<a href="https://github.com/mtford90/silk/">django-silk</a> - Silky smooth profiling for Django</li>
+<a href="https://github.com/mtford90/silk/">django-silk</a> - 分析django性能的工具</li>
 </ul>
 
 <h2>
 <a id="email" class="anchor" href="#email" aria-hidden="true"><span class="octicon octicon-link"></span></a>Email</h2>
 
-<p><em>Packages that help manage email sending.</em></p>
+<p><strong>邮件发送相关的包</strong></p>
 
 <ul>
 <li>
-<a href="https://github.com/pmclanahan/django-celery-email/">django-celery-email</a> - A Django email backend that uses a celery task for sending the email.</li>
+<a href="https://github.com/pmclanahan/django-celery-email/">django-celery-email</a> - 使用celery 的异步任务来发送邮件</li>
 <li>
-<a href="https://github.com/zapier/django-drip">django-drip</a> - Django Admin based management for drip email campaigns</li>
+<a href="https://github.com/zapier/django-drip">django-drip</a> - 通过django admin 来管理邮件情况，有邮件模板，还可以查询邮件记录</li>
 <li>
-<a href="https://github.com/BradWhittington/django-mailgun/">django-mailgun</a> - A Django email backend for Mailgun.</li>
+<a href="https://github.com/BradWhittington/django-mailgun/">django-mailgun</a> -  基于 Mailgun 的django邮件后端</li>
 <li>
-<a href="https://github.com/ui/django-post_office/">django-post_office</a> - A simple app to send and manage your emails in Django, supports templates and can be easily integrated with task queues.</li>
+<a href="https://github.com/ui/django-post_office/">django-post_office</a> - 一个简单的app，可以在django中发送和管理邮件，支持模板，也很容易集成到任务队列中</li>
 <li>
-<a href="https://github.com/hmarr/django-ses/">django-ses</a> - A Django email backend for Amazon's Simple Email Service.</li>
+<a href="https://github.com/hmarr/django-ses/">django-ses</a> - Amazon's Simple Email Service 服务的django 后端实现</li>
 <li>
-<a href="https://github.com/brack3t/Djrill/">djrill</a> - Email backend and new message class for Mandrill transactional email service from MailChimp.</li>
+<a href="https://github.com/brack3t/Djrill/">djrill</a> - MailChimp 的Mandrill 事务性邮件的后端</li>
 <li>
-<a href="https://github.com/BradWhittington/django-templated-email">django-templated-email</a> - Django module to easily send templated emails using django templates, or using a transactional mail provider (mailchimp, silverpop, etc.)</li>
+<a href="https://github.com/BradWhittington/django-templated-email">django-templated-email</a> -
+可以使用django templates 来发送邮件的模块，还可以集成 （mailchimp, silverpop, 等） 邮件服务提供商的服务</li>
 <li>
-<a href="https://github.com/APSL/django-yubin">django-yubin</a> - django-mailer2 + django-mailviews with some extras.</li>
+<a href="https://github.com/APSL/django-yubin">django-yubin</a> - django-mailer2 + django-mailviews 还有些拓展</li>
 <li>
-<a href="https://github.com/20tab/django-spoolgore">django-spoolgore</a> - A django email backed for the Spoolgore daemon.</li>
+<a href="https://github.com/20tab/django-spoolgore">django-spoolgore</a> -  基于Spoolgore daemon的后端</li>
 </ul>
 
 <h2>
-<a id="fields" class="anchor" href="#fields" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fields</h2>
-
-<p><em>Packages that extend the functionality of existing field type or add new field types.</em></p>
+<a id="字段" class="anchor" href="#%E5%AD%97%E6%AE%B5" aria-hidden="true"><span class="octicon octicon-link"></span></a>字段</h2>
 
 <ul>
+<li><p>拓展了现有字段的功能或者添加了新的字段类型 *</p></li>
+<li><p><a href="https://github.com/disqus/django-bitfield/">django-bitfield</a> -  添加了一个 BitField 类型</p></li>
 <li>
-<a href="https://github.com/disqus/django-bitfield/">django-bitfield</a> - A BitField extension for Django models.</li>
+<a href="https://github.com/5monkeys/django-enumfield/">django-enumfield</a> -  用枚举命名常量来定义 django 字段</li>
 <li>
-<a href="https://github.com/5monkeys/django-enumfield/">django-enumfield</a> - Custom Django field for using enumerations of named constants.</li>
+<a href="https://github.com/bonsaistudio/django-image-tools/">django-image-tools</a> - 用来处理图片的一个包</li>
 <li>
-<a href="https://github.com/bonsaistudio/django-image-tools/">django-image-tools</a> - A package to handle images in Django.</li>
+<a href="https://github.com/matthewwithanm/django-imagekit/">django-imagekit</a> - 自动处理Django中的图片</li>
 <li>
-<a href="https://github.com/matthewwithanm/django-imagekit/">django-imagekit</a> - Automated image processing for Django.</li>
+<a href="https://pypi.python.org/pypi/django-jsonfield">django-jsonfield</a> - django模型中的json类型字段</li>
 <li>
-<a href="https://pypi.python.org/pypi/django-jsonfield">django-jsonfield</a> - JSONField for Django models.</li>
+<a href="https://github.com/caioariede/django-location-field/">django-location-field</a> - 集成了 google maps的位置字段和外观</li>
 <li>
-<a href="https://github.com/caioariede/django-location-field/">django-location-field</a> - Location field and widget integrated with google maps.</li>
+<a href="https://github.com/gintas/django-picklefield/">django-picklefield</a> - pickled 对象字段</li>
 <li>
-<a href="https://github.com/gintas/django-picklefield/">django-picklefield</a> - A pickled object field for Django</li>
+<a href="https://github.com/dcramer/django-uuidfield/">django-uuidfield</a> - 添加了django uuid字段 UUIDField </li>
 <li>
-<a href="https://github.com/dcramer/django-uuidfield/">django-uuidfield</a> - A UUIDField for Django.</li>
-<li>
-<a href="https://github.com/SmileyChris/django-countries/">django-countries</a> - Provides country choices for forms, flag icons, and a CountryField.</li>
+<a href="https://github.com/SmileyChris/django-countries/">django-countries</a> -  提供了国家表单中国家选择，国旗图标和CountryField 字段</li>
 </ul>
 
 <h2>
-<a id="file-transfers" class="anchor" href="#file-transfers" aria-hidden="true"><span class="octicon octicon-link"></span></a>File Transfers</h2>
+<a id="文件传输" class="anchor" href="#%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93" aria-hidden="true"><span class="octicon octicon-link"></span></a>文件传输</h2>
 
-<p><em>Packages that help transfer files between projects and users</em></p>
+<p><strong>可以帮助用户和项目之间传输文件的包</strong></p>
 
 <ul>
 <li>
-<a href="https://github.com/benoitbryon/django-downloadview/">django-downloadview</a> - Serve files with Django.</li>
+<a href="https://github.com/benoitbryon/django-downloadview/">django-downloadview</a> - Django的文件服务</li>
 <li>
-<a href="https://github.com/johnsensible/django-sendfile/">django-sendfile</a> - This is a wrapper around web-server specific methods for sending files to web clients.</li>
+<a href="https://github.com/johnsensible/django-sendfile/">django-sendfile</a> - 封装了服务端往web客户端发送文件的方法，对于HTTPResponse 的封装</li>
 </ul>
 
 <h2>
-<a id="forms" class="anchor" href="#forms" aria-hidden="true"><span class="octicon octicon-link"></span></a>Forms</h2>
+<a id="表单" class="anchor" href="#%E8%A1%A8%E5%8D%95" aria-hidden="true"><span class="octicon octicon-link"></span></a>表单</h2>
 
-<p><em>Packages that extend the functionality of forms or add new types of forms.</em></p>
+<p><strong>这些包拓展了表单的方法和类型</strong></p>
 
 <ul>
 <li>
-<a href="https://github.com/tzangms/django-bootstrap-form/">django-bootstrap-form</a> - Twitter Bootstrap for Django Form</li>
+<a href="https://github.com/tzangms/django-bootstrap-form/">django-bootstrap-form</a> -  基于Bootstrap的Form封装</li>
 <li>
-<a href="https://github.com/dyve/django-bootstrap3/">django-bootstrap3</a> - Use Bootstrap in your Django templates, the Django way.</li>
+<a href="https://github.com/dyve/django-bootstrap3/">django-bootstrap3</a> - 在你的django模板中使用Bootstrap，Django的方式</li>
 <li>
 <a href="https://github.com/maraujop/django-crispy-forms/">django-crispy-forms</a> - The best way to have DRY Django forms. The app provides a tag and filter that lets you quickly render forms in a div format while providing an enormous amount of capability to configure and control the rendered HTML.</li>
 <li>
@@ -317,45 +316,46 @@
 <h2>
 <a id="restful-api" class="anchor" href="#restful-api" aria-hidden="true"><span class="octicon octicon-link"></span></a>RESTful API</h2>
 
-<p><em>Packages for developing RESTful APIs.</em></p>
+<p>** 用于开发RESTful API的包 **</p>
 
 <ul>
 <li>
-<a href="http://github.com/funkybob/django-nap/">django-nap</a> - A minimalist approach to object serialization, RESTful views, and RPC views.</li>
+<a href="http://github.com/funkybob/django-nap/">django-nap</a> - 用极简的方法来序列化对象， restful视图，RPC 视图</li>
 <li>
-<a href="http://www.django-rest-framework.org/">django-rest-framework</a> - A powerful and flexible toolkit that makes it easy to build Web APIs.</li>
+<a href="http://www.django-rest-framework.org/">django-rest-framework</a> -一个强大而灵活的工具，使得开发Web接口变的非常简单（推荐）</li>
 <li>
-<a href="https://github.com/marcgibbons/django-rest-swagger/">django-rest-swagger</a> - Swagger Documentation Generator for Django REST Framework</li>
+<a href="https://github.com/marcgibbons/django-rest-swagger/">django-rest-swagger</a> - Django REST Framework 的简单时髦的文档生成器 </li>
 <li>
-<a href="http://tastypieapi.org/">django-tastypie</a> - Creating delicious APIs for Django apps since 2010.</li>
+<a href="http://tastypieapi.org/">django-tastypie</a> - 从2010年就可以在django中创建美味的APIs</li>
 <li>
-<a href="https://github.com/toastdriven/restless/">restless</a> - A lightweight REST miniframework for Python</li>
+<a href="https://github.com/toastdriven/restless/">restless</a> - 轻量级迷你python rest 框架</li>
 </ul>
 
 <h2>
-<a id="migrations" class="anchor" href="#migrations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Migrations</h2>
+<a id="迁移" class="anchor" href="#%E8%BF%81%E7%A7%BB" aria-hidden="true"><span class="octicon octicon-link"></span></a>迁移</h2>
 
-<p><em>Packages that help migrate the database when there are schema updates.</em></p>
+<p>** 当数据库schema变更的时候，用来做数据迁移的包 **</p>
 
 <ul>
 <li>
-<a href="https://bitbucket.org/andrewgodwin/south/src/">South</a> - Django application to provide schema and data migrations that supports Django up to 1.6.x. (<a href="https://docs.djangoproject.com/en/dev/topics/migrations/">Django 1.7 and up have an integrated migration system, based on but not compatible with South</a>)</li>
+<a href="https://bitbucket.org/andrewgodwin/south/src/">South</a> - 给Django应用提供了schema和数据迁移，支持到1.6.x 版本 (<a href="https://docs.djangoproject.com/en/dev/topics/migrations/">Django1.7以上版本已经支持数据迁移，相当于south合并到django中了</a>)</li>
 </ul>
 
 <h2>
-<a id="mobile-support" class="anchor" href="#mobile-support" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mobile Support</h2>
+<a id="移动端支持" class="anchor" href="#%E7%A7%BB%E5%8A%A8%E7%AB%AF%E6%94%AF%E6%8C%81" aria-hidden="true"><span class="octicon octicon-link"></span></a>移动端支持</h2>
 
-<p><em>Packages that help you support for mobile iOS, Android and Others</em></p>
+<p>** iOS，Android 和其他移动端开发的支持 **</p>
 
 <ul>
-<li><p><a href="https://github.com/jleclanche/django-push-notifications">django-push-notifications</a> - A minimal Django app that implements Device models that can send messages through APNS and GCM.</p></li>
-<li><p><a href="https://github.com/rakanalh/django-pushy">django-pushy</a> - Django app that provides push notifications functionality with celery. The main purpose of this app is to help you send push notifications to your users at scale. If you have lots of registered device keys, django-pushy will split your keys into smaller groups which run in parallel making the process of sending notifications faster.</p></li>
+<li><p><a href="https://github.com/jleclanche/django-push-notifications">django-push-notifications</a> -
+一个简单的Django app， 实现了设备模型，可以通过 APNS和GCM给客户端发送消息。</p></li>
+<li><p><a href="https://github.com/rakanalh/django-pushy">django-pushy</a> - Django app，它借助celery来提供消息通知的推送。这个app的主要目的就是帮助你发送推送提醒到用户，而且是有一定用户规模。 如果你有很多已经注册的设备keys， django－pushy将会吧keys分成很多小组，并行发送消息题想，使得发送速度更快。</p></li>
 </ul>
 
 <h2>
-<a id="model-extensions" class="anchor" href="#model-extensions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Model Extensions</h2>
+<a id="模型拓展" class="anchor" href="#%E6%A8%A1%E5%9E%8B%E6%8B%93%E5%B1%95" aria-hidden="true"><span class="octicon octicon-link"></span></a>模型拓展</h2>
 
-<p><em>Packages that extend the functionality of models or add new classes of models.</em></p>
+<p>** 拓展了models的功能或者是添加了新的模型 **</p>
 
 <ul>
 <li>
@@ -791,7 +791,7 @@
 
 <ul>
 <li>
-<a href="http://www.djangobeer.com/">Django Beer</a> - the new meeting of the Django community of Florence.</li>
+<a href="http://www.djangobeer.com/">Django Beer</a> -  Florence 地区的django社区的聚会</li>
 <li>
 <a href="http://djangovillage.it/">Django Village</a> - the Italian Django community conference. An opportunity to meet djangonauts from all over Italy and abroad.</li>
 <li>
@@ -809,13 +809,13 @@
 
 <ul>
 <li>
-<a href="https://github.com/rosarior/django-must-watch/">Must Watch Django Videos</a> - Must-watch videos about Django (or about Python as applied to Django)</li>
+<a href="https://github.com/rosarior/django-must-watch/">Must Watch Django Videos</a> - django 必看视频收集</li>
 </ul>
 
 <h1>
-<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributing</h1>
+<a id="贡献" class="anchor" href="#%E8%B4%A1%E7%8C%AE" aria-hidden="true"><span class="octicon octicon-link"></span></a>贡献</h1>
 
-<p>Just fork and send a pull request with your awesome Django apps, projects or resources.</p>
+<p>fork 过来 然后发送一个 PR 到这个项目就行了。</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/orangle/awesome-django">Awesome-django</a> is maintained by <a href="https://github.com/orangle">orangle</a>.</span>
