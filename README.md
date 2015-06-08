@@ -1,4 +1,4 @@
-# <a href="http://rosarior.github.io/awesome-django/"><img src="https://raw.githubusercontent.com/rosarior/awesome-django/gh-pages/images/logo-small.png" align="absmiddle"/> Awesome Django</a>
+# <a href="http://rosarior.github.io/awesome-django/"><img src="https://raw.githubusercontent.com/rosarior/awesome-django/gh-pages/images/logo-small.png" align="absmiddle"/> Awesome Django(了不起的Django)</a>
 
 > 这是一个[awesome-python](https://github.com/vinta/awesome-python/) 项目的中文翻译，主要收集了一些 Django相关的资源，很多东西可以帮助我们快速的开发，很多东西的实现原理也可以带给我们一些启迪。
 
@@ -16,21 +16,21 @@
     - [邮件](#email)
     - [字段](#fields)
     - [文件传输](#file-transfers)
-    - [Forms](#forms)
-    - [Migrations](#migrations)
-    - [Mobile Support](#mobile-support)
-    - [Model Extensions](#model-extensions)
-    - [Payment Processing](#payment-processing)
-    - [Project Management](#project-management)
+    - [表单](#forms)
+    - [迁移](#migrations)
+    - [移动端支持](#mobile-support)
+    - [模型拓展](#model-extensions)
+    - [支付相关](#payment-processing)
+    - [项目控制](#project-management)
     - [RESTful API](#restful-api)
-    - [Search](#search)
-    - [Security](#security)
+    - [搜索](#search)
+    - [安全](#security)
     - [SEO](#seo)
     - [Settings](#settings)
-    - [Storage](#storage)
-    - [Tagging](#tagging)
-    - [Task Queue](#task-queue)
-    - [Testing](#testing)
+    - [存储](#storage)
+    - [标签](#tagging)
+    - [任务队列](#task-queue)
+    - [测试](#testing)
     - [Thumbnail](#thumbnail)
     - [Cropping Images](#cropping-image)
     - [Translations](#translations)
@@ -150,17 +150,17 @@
 
 ## 字段
 
-*Packages that extend the functionality of existing field type or add new field types.*
+* 拓展了现有字段的功能或者添加了新的字段类型 *
 
-* [django-bitfield](https://github.com/disqus/django-bitfield/) - A BitField extension for Django models.
-* [django-enumfield](https://github.com/5monkeys/django-enumfield/) - Custom Django field for using enumerations of named constants.
-* [django-image-tools](https://github.com/bonsaistudio/django-image-tools/) - A package to handle images in Django.
-* [django-imagekit](https://github.com/matthewwithanm/django-imagekit/) - Automated image processing for Django.
-* [django-jsonfield](https://pypi.python.org/pypi/django-jsonfield) - JSONField for Django models.
-* [django-location-field](https://github.com/caioariede/django-location-field/) - Location field and widget integrated with google maps.
-* [django-picklefield](https://github.com/gintas/django-picklefield/) - A pickled object field for Django
-* [django-uuidfield](https://github.com/dcramer/django-uuidfield/) - A UUIDField for Django.
-* [django-countries](https://github.com/SmileyChris/django-countries/) - Provides country choices for forms, flag icons, and a CountryField.
+* [django-bitfield](https://github.com/disqus/django-bitfield/) -  添加了一个 BitField 类型
+* [django-enumfield](https://github.com/5monkeys/django-enumfield/) -  用枚举命名常量来定义 django 字段
+* [django-image-tools](https://github.com/bonsaistudio/django-image-tools/) - 用来处理图片的一个包
+* [django-imagekit](https://github.com/matthewwithanm/django-imagekit/) - 自动处理Django中的图片
+* [django-jsonfield](https://pypi.python.org/pypi/django-jsonfield) - django模型中的json类型字段
+* [django-location-field](https://github.com/caioariede/django-location-field/) - 集成了 google maps的位置字段和外观
+* [django-picklefield](https://github.com/gintas/django-picklefield/) - pickled 对象字段
+* [django-uuidfield](https://github.com/dcramer/django-uuidfield/) - 添加了django uuid字段 UUIDField 
+* [django-countries](https://github.com/SmileyChris/django-countries/) -  提供了国家表单中国家选择，国旗图标和CountryField 字段
 
 
 ## 文件传输
@@ -181,32 +181,32 @@
 
 ## RESTful API
 
-*Packages for developing RESTful APIs.*
+** 用于开发RESTful API的包 **
 
-* [django-nap](http://github.com/funkybob/django-nap/) - A minimalist approach to object serialization, RESTful views, and RPC views.
-* [django-rest-framework](http://www.django-rest-framework.org/) - A powerful and flexible toolkit that makes it easy to build Web APIs.
-* [django-rest-swagger](https://github.com/marcgibbons/django-rest-swagger/) - Swagger Documentation Generator for Django REST Framework
-* [django-tastypie](http://tastypieapi.org/) - Creating delicious APIs for Django apps since 2010.
-* [restless](https://github.com/toastdriven/restless/) - A lightweight REST miniframework for Python
+* [django-nap](http://github.com/funkybob/django-nap/) - 用极简的方法来序列化对象， restful视图，RPC 视图
+* [django-rest-framework](http://www.django-rest-framework.org/) -一个强大而灵活的工具，使得开发Web接口变的非常简单（推荐）
+* [django-rest-swagger](https://github.com/marcgibbons/django-rest-swagger/) - Django REST Framework 的简单时髦的文档生成器 
+* [django-tastypie](http://tastypieapi.org/) - 从2010年就可以在django中创建美味的APIs
+* [restless](https://github.com/toastdriven/restless/) - 轻量级迷你python rest 框架
 
-## Migrations
+## 迁移
 
-*Packages that help migrate the database when there are schema updates.*
+** 当数据库schema变更的时候，用来做数据迁移的包 **
 
-* [South](https://bitbucket.org/andrewgodwin/south/src/) - Django application to provide schema and data migrations that supports Django up to 1.6.x. ([Django 1.7 and up have an integrated migration system, based on but not compatible with South](https://docs.djangoproject.com/en/dev/topics/migrations/))
+* [South](https://bitbucket.org/andrewgodwin/south/src/) - 给Django应用提供了schema和数据迁移，支持到1.6.x 版本 ([Django1.7以上版本已经支持数据迁移，相当于south合并到django中了](https://docs.djangoproject.com/en/dev/topics/migrations/))
 
-## Mobile Support
+## 移动端支持
 
-*Packages that help you support for mobile iOS, Android and Others*
+** iOS，Android 和其他移动端开发的支持 **
 
-* [django-push-notifications](https://github.com/jleclanche/django-push-notifications) - A minimal Django app that implements Device models that can send messages through APNS and GCM.
+* [django-push-notifications](https://github.com/jleclanche/django-push-notifications) -
+一个简单的Django app， 实现了设备模型，可以通过 APNS和GCM给客户端发送消息。
 
-* [django-pushy](https://github.com/rakanalh/django-pushy) - Django app that provides push notifications functionality with celery. The main purpose of this app is to help you send push notifications to your users at scale. If you have lots of registered device keys, django-pushy will split your keys into smaller groups which run in parallel making the process of sending notifications faster.
+* [django-pushy](https://github.com/rakanalh/django-pushy) - Django app，它借助celery来提供消息通知的推送。这个app的主要目的就是帮助你发送推送提醒到用户，而且是有一定用户规模。 如果你有很多已经注册的设备keys， django－pushy将会吧keys分成很多小组，并行发送消息题想，使得发送速度更快。
 
+## 模型拓展
 
-## Model Extensions
-
-*Packages that extend the functionality of models or add new classes of models.*
+** 拓展了models的功能或者是添加了新的模型 **
 
 * [django-aggregate-if](https://github.com/henriquebastos/django-aggregate-if/) - Conditional aggregates for Django queries, just like the famous SumIf and CountIf in Excel.
 * [django-localflavor](https://github.com/django/django-localflavor/) - Country-specific Django helpers, formerly of contrib fame.
